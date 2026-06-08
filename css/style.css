@@ -21,3 +21,31 @@ footer {
     margin-top: 40px;
     text-align: center;
 }
+
+main {
+    margin-top: 30px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #1f2937;
+    border-bottom: 2px solid #d1d5db;
+    padding-bottom: 10px;
+}
+
+p {
+    line-height: 1.7;
+}
+
+ul {
+    line-height: 1.8;
+}
+
+footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #d1d5db;
+}
