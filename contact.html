@@ -1,17 +1,32 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | Iron Post Continuity</title>
+
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<header>
-    <h1>Iron Post Continuity</h1>
-    <p>Plan. Prepare. Protect.</p>
+<header class="site-header">
+
+    <img src="images/logo.png"
+         alt="Iron Post Continuity Logo"
+         class="logo">
+
+    <div class="header-text">
+        <h1>Iron Post Continuity</h1>
+        <p>Plan. Prepare. Protect.</p>
+    </div>
+
 </header>
 
 <nav>
@@ -25,22 +40,159 @@
 
 <main>
 
-<section>
-    <h2>Contact Us</h2>
+<section class="contact-section">
+
+    <h2>Request a Free Consultation</h2>
 
     <p>
-        Whether you're starting from scratch or looking to improve
-        existing continuity and recovery plans, we're here to help.
+        Tell us about your organization and continuity planning needs.
+        We will review your submission and contact you to schedule
+        a complimentary consultation.
     </p>
 
-    <p>
-        Schedule a free consultation to discuss your organization's
-        preparedness goals and current challenges.
+    <form
+        id="contact-form"
+        class="contact-form"
+        action="https://formspree.io/f/xrevqdqw"
+        method="POST">
+
+        <input type="hidden"
+               name="_subject"
+               value="New Website Inquiry - Iron Post Continuity">
+
+        <label for="name">Name *</label>
+        <input
+            type="text"
+            id="name"
+            name="name"
+            required>
+
+        <label for="email">Email Address *</label>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            required>
+
+        <label for="phone">Phone Number</label>
+        <input
+            type="tel"
+            id="phone"
+            name="phone">
+
+        <label for="company">Organization Name</label>
+        <input
+            type="text"
+            id="company"
+            name="company">
+
+        <label for="employees">
+            Approximate Number of Employees
+        </label>
+
+        <select
+            id="employees"
+            name="employees">
+
+            <option value="">Select One</option>
+            <option>1-10</option>
+            <option>11-25</option>
+            <option>26-50</option>
+            <option>51-100</option>
+            <option>101-250</option>
+            <option>251+</option>
+
+        </select>
+
+        <label for="service">
+            Service of Interest
+        </label>
+
+        <select
+            id="service"
+            name="service">
+
+            <option value="">Select One</option>
+
+            <option>Business Impact Analysis (BIA)</option>
+
+            <option>Business Continuity Planning (BCP)</option>
+
+            <option>Disaster Recovery Planning (DRP)</option>
+
+            <option>Incident Response Planning (IRP)</option>
+
+            <option>Tabletop Exercise</option>
+
+            <option>Preparedness Assessment</option>
+
+            <option>Monthly Support Plan</option>
+
+            <option>General Consultation</option>
+
+        </select>
+
+        <label for="urgency">
+            Current Situation
+        </label>
+
+        <select
+            id="urgency"
+            name="urgency">
+
+            <option value="">Select One</option>
+
+            <option>Planning Ahead</option>
+
+            <option>Updating Existing Plans</option>
+
+            <option>Preparing for Compliance Requirements</option>
+
+            <option>Recent Incident or Outage</option>
+
+            <option>Need Immediate Assistance</option>
+
+        </select>
+
+        <label for="message">
+            How Can We Help? *
+        </label>
+
+        <textarea
+            id="message"
+            name="message"
+            rows="8"
+            required
+            placeholder="Tell us about your business, current challenges, or continuity planning goals."></textarea>
+
+        <button
+            type="submit"
+            class="cta-button">
+
+            Submit Request
+
+        </button>
+
+    </form>
+
+    <div id="form-status"></div>
+
+    <p class="privacy-note">
+
+        Your information will only be used to respond to your inquiry.
+        Iron Post Continuity does not sell or share client information.
+
     </p>
+
 </section>
 
 <section>
-    <h2>Get In Touch</h2>
+
+    <h2>Direct Contact Information</h2>
+
+    <p>
+        Prefer to contact us directly?
+    </p>
 
     <p>
         <strong>Email:</strong><br>
@@ -50,12 +202,13 @@
     </p>
 
     <p>
-        <strong>Phone:</strong><br>
-        (931) XXX-XXXX
+        Meetings are available by appointment.
     </p>
+
 </section>
 
 <section>
+
     <h2>Office Location</h2>
 
     <p>
@@ -65,66 +218,63 @@
         Clarksville, TN 37040
     </p>
 
-    <p>
-        Meetings are available by appointment.
-    </p>
-</section>
-
-<section>
-    <h2>Business Hours</h2>
-
-    <table class="hours-table">
-        <tr>
-            <td>Monday</td>
-            <td>By Appointment</td>
-        </tr>
-        <tr>
-            <td>Tuesday</td>
-            <td>By Appointment</td>
-        </tr>
-        <tr>
-            <td>Wednesday</td>
-            <td>By Appointment</td>
-        </tr>
-        <tr>
-            <td>Thursday</td>
-            <td>By Appointment</td>
-        </tr>
-        <tr>
-            <td>Friday</td>
-            <td>By Appointment</td>
-        </tr>
-        <tr>
-            <td>Saturday</td>
-            <td>Closed</td>
-        </tr>
-        <tr>
-            <td>Sunday</td>
-            <td>Closed</td>
-        </tr>
-    </table>
-</section>
-
-<section>
-    <h2>Free Initial Consultation</h2>
-
-    <p>
-        Every engagement begins with a complimentary 30-minute consultation.
-        During this conversation we'll discuss your business, current
-        preparedness efforts, and determine how Iron Post Continuity can
-        best support your continuity and recovery objectives.
-    </p>
-
-    <p>
-        No obligation. No pressure. Just a conversation about preparedness.
-    </p>
 </section>
 
 </main>
 
 <footer>
-    <p>&copy; 2026 Iron Post Continuity. All Rights Reserved.</p>
+
+    <h3>Iron Post Continuity</h3>
+
+    <p>Plan. Prepare. Protect.</p>
+
+    <p>Clarksville, Tennessee</p>
+
+    <p>joshlittle@ironpostcontinuity.com</p>
+
+    <p>Veteran-Owned Small Business</p>
+
 </footer>
+
+<script>
+
+const form = document.getElementById('contact-form');
+const status = document.getElementById('form-status');
+
+form.addEventListener('submit', async (e) => {
+
+    e.preventDefault();
+
+    const response = await fetch(form.action, {
+
+        method: 'POST',
+
+        body: new FormData(form),
+
+        headers: {
+            'Accept': 'application/json'
+        }
+
+    });
+
+    if (response.ok) {
+
+        status.innerHTML =
+            '<p style="color:green;font-weight:600;">✓ Thank you! Your message has been sent successfully.</p>';
+
+        form.reset();
+
+    } else {
+
+        status.innerHTML =
+            '<p style="color:red;font-weight:600;">Something went wrong. Please try again later.</p>';
+
+    }
+
+});
+
+</script>
 
 </body>
 </html>
+```
