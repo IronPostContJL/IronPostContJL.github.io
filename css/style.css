@@ -1,1 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
 
+header {
+    text-align: center;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    margin-right: 15px;
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+}
