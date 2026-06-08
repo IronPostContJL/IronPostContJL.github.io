@@ -5,13 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frequently Asked Questions | Iron Post Continuity</title>
     <link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+
+        item.addEventListener('toggle', () => {
+
+            if (item.open) {
+
+                faqItems.forEach(otherItem => {
+
+                    if (otherItem !== item) {
+                        otherItem.open = false;
+                    }
+
+                });
+
+            }
+
+        });
+
+    });
+
+});
+</script>
 
 <body>
 
-<header>
-    <h1>Iron Post Continuity</h1>
-    <p>Plan. Prepare. Protect.</p>
+<header class="site-header">
+
+    <img src="images/logo.png"
+         alt="Iron Post Continuity Logo"
+         class="logo">
+
+    <div class="header-text">
+        <h1>Iron Post Continuity</h1>
+        <p>Plan. Prepare. Protect.</p>
+    </div>
+
 </header>
 
 <nav>
@@ -237,7 +276,11 @@
 </main>
 
 <footer>
-    <p>&copy; 2026 Iron Post Continuity. All Rights Reserved.</p>
+    <h3>Iron Post Continuity</h3>
+    <p>Plan. Prepare. Protect.</p>
+    <p>Clarksville, Tennessee</p>
+    <p>joshlittle@ironpostcontinuity.com</p>
+    <p>Veteran-Owned Small Business</p>
 </footer>
 
 </body>
