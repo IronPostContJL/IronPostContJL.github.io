@@ -848,6 +848,13 @@ color: var(--text-light);
     border-color: #b22222;
 }
 
+.error-message {
+    color: #b22222;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
 /* ==================================================
 FOOTER
 ================================================== */
