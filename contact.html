@@ -399,8 +399,19 @@
 <script>
 const form = document.getElementById('contact-form');
 const status = document.getElementById('form-status');
+
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
+
+    const checked = document.querySelectorAll(
+        'input[name="service[]"]:checked'
+    );
+
+    if (checked.length === 0) {
+        alert("Please select at least one Service of Interest.");
+        return;
+    }
+
     const response = await fetch(form.action, {
         method: 'POST',
         body: new FormData(form),
@@ -408,24 +419,15 @@ form.addEventListener('submit', async (e) => {
             'Accept': 'application/json'
         }
     });
+
     if (response.ok) {
         status.innerHTML =
             '<p style="color:green;font-weight:600;margin-top:20px;">✓ Thank you! Your message has been sent successfully.</p>';
+
         form.reset();
     } else {
         status.innerHTML =
             '<p style="color:red;font-weight:600;margin-top:20px;">Something went wrong. Please try again later.</p>';
-    }
-});
-</script>
-
-<script>
-document.querySelector("form").addEventListener("submit", function(e) {
-    const checked = document.querySelectorAll('input[name="service[]"]:checked');
-
-    if (checked.length === 0) {
-        e.preventDefault();
-        alert("Please select at least one Service of Interest.");
     }
 });
 </script>
