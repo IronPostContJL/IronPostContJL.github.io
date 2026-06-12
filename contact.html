@@ -152,29 +152,20 @@
 
                 <div class="form-group">
                     <label for="service">
-                        Service of Interest
+                        Service of Interest <span>*</span>
                     </label>
 
-                    <select
-                        id="service"
-                        name="service[]"
-                        multiple>
-
-                        <option value="">Select One</option>
-
-                        <option>General Consultation</option>
-                        <option>Continuity Audit</option>
-                        <option>Business Impact Analysis</option>
-                        <option>Business Continuity Planning</option>
-                        <option>Disaster Recovery Planning</option>
-                        <option>Incident Response Planning</option>
-                        <option>Tabletop Exercise</option>
-                        <option>Preparedness Assessment</option>
-                        <option>Monthly Support Plan</option>
-
-                    </select>
-
-                    <small>Hold Ctrl (Windows) or Cmd (Mac) to select multiple services.</small>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="service[]" value="General Consultation"> General Consultation</label>
+                        <label><input type="checkbox" name="service[]" value="Continuity Audit"> Continuity Audit</label>
+                        <label><input type="checkbox" name="service[]" value="Business Impact Analysis"> Business Impact Analysis</label>
+                        <label><input type="checkbox" name="service[]" value="Business Continuity Planning"> Business Continuity Planning</label>
+                        <label><input type="checkbox" name="service[]" value="Disaster Recovery Planning"> Disaster Recovery Planning</label>
+                        <label><input type="checkbox" name="service[]" value="Incident Response Planning"> Incident Response Planning</label>
+                        <label><input type="checkbox" name="service[]" value="Tabletop Exercise"> Tabletop Exercise</label>
+                        <label><input type="checkbox" name="service[]" value="Preparedness Assessment"> Preparedness Assessment</label>
+                        <label><input type="checkbox" name="service[]" value="Monthly Support Plan"> Monthly Support Plan</label>
+                    
                 </div>
 
                 <div class="form-group">
@@ -373,42 +364,37 @@
 </footer>
 
 <script>
-
 const form = document.getElementById('contact-form');
 const status = document.getElementById('form-status');
-
 form.addEventListener('submit', async (e) => {
-
     e.preventDefault();
-
     const response = await fetch(form.action, {
-
         method: 'POST',
-
         body: new FormData(form),
-
         headers: {
             'Accept': 'application/json'
         }
-
     });
-
     if (response.ok) {
-
         status.innerHTML =
             '<p style="color:green;font-weight:600;margin-top:20px;">✓ Thank you! Your message has been sent successfully.</p>';
-
         form.reset();
-
     } else {
-
         status.innerHTML =
             '<p style="color:red;font-weight:600;margin-top:20px;">Something went wrong. Please try again later.</p>';
-
     }
-
 });
+</script>
 
+<script>
+document.querySelector("form").addEventListener("submit", function(e) {
+    const checked = document.querySelectorAll('input[name="service[]"]:checked');
+
+    if (checked.length === 0) {
+        e.preventDefault();
+        alert("Please select at least one Service of Interest.");
+    }
+});
 </script>
 
 </body>
