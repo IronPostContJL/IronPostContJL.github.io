@@ -261,6 +261,7 @@ THEME TOGGLE SWITCH
 .theme-switch {
     position: relative;
     display: inline-block;
+    margin-left: 10px;
     width: 52px;
     height: 28px;
 }
@@ -275,7 +276,7 @@ THEME TOGGLE SWITCH
     position: absolute;
     cursor: pointer;
     inset: 0;
-    background-color: #cbd5e1;
+    background-color: #29517f;
     transition: .3s ease;
     border-radius: 34px;
 }
@@ -293,11 +294,26 @@ THEME TOGGLE SWITCH
 }
 
 input:checked + .slider {
-    background-color: var(--secondary);
+    background-color: #c8a04d;
 }
 
 input:checked + .slider:before {
     transform: translateX(24px);
+}
+
+.slider::after {
+    content: "☀";
+    position: absolute;
+    right: 8px;
+    top: 4px;
+    color: white;
+    font-size: 12px;
+}
+
+input:checked + .slider::after {
+    content: "🌙";
+    left: 8px;
+    right: auto;
 }
 
 /* ==================================================
