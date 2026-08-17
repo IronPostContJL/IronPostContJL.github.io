@@ -26,6 +26,28 @@ Professional Consulting Theme
 
 }
 
+/* ==========================================
+DARK MODE
+========================================== */
+
+body.dark-mode {
+    --primary: #4f8ccf;
+    --primary-dark: #336799;
+    --primary-light: #74a7df;
+
+    --secondary: #d9b263;
+
+    --text: #e5e7eb;
+    --text-light: #9ca3af;
+
+    --background: #111827;
+    --surface: #1f2937;
+
+    --border: #374151;
+
+    --shadow: 0 10px 30px rgba(0,0,0,.35);
+}
+
 /* ==================================================
 RESET
 ================================================== */
