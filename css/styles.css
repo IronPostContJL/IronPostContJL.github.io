@@ -147,7 +147,7 @@ HEADER
 header {
 
 
-background: white;
+background: var(--surface);
 
 position: sticky;
 
@@ -382,7 +382,7 @@ background-image: url('../images/contact-hero.jpg');
 
     align-items: center;
 
-    background: white;
+    background: var(--surface);
 
     padding: 40px;
 
@@ -475,7 +475,7 @@ TRUST BAR
 .trust-bar {
 
 
-background: white;
+background: var(--surface);
 
 padding: 30px 0;
 
@@ -518,7 +518,7 @@ background: var(--background);
 .section-dark {
 
 
-background: #eef3f8;
+background: color-mix(in srgb, var(--background) 90%, white 10%);
 
 
 }
@@ -584,7 +584,7 @@ gap: 30px;
 .card {
 
 
-background: white;
+background: var(--surface);
 
 padding: 35px;
 
@@ -670,7 +670,7 @@ margin: auto;
 .faq-item {
 
 
-background: white;
+background: var(--surface);
 
 margin-bottom: 15px;
 
@@ -752,7 +752,7 @@ gap: 40px;
 .contact-info-card {
 
 
-background: white;
+background: var(--surface);
 
 padding: 35px;
 
@@ -843,7 +843,7 @@ color: var(--text-light);
     align-items: center;
     gap: 10px;
     padding: 12px 16px;
-    background: #ffffff;
+    background: var(--surface);
     border: 1px solid #d8dde6;
     border-radius: 8px;
     cursor: pointer;
