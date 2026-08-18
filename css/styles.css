@@ -430,6 +430,10 @@ background-image: url('../images/faq-hero.jpg');
 background-image: url('../images/contact-hero.jpg');
 }
 
+.portal-hero {
+    background-image: url('../images/portal-hero.jpg');
+}
+
 /* ==========================================
    Founder Section
 ========================================== */
