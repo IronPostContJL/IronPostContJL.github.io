@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Portal | Iron Post Continuity</title>
+
+    images/favicon.ico
+    css/styles.css
+
+    https://fonts.googleapis.com
+    https://fonts.gstatic.com
+    ://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="container nav-container">
+        <a href="index.html" class="logo-container">
+            .png"
+                 alt="Iron Post Continuity Logo"
+                 class="logo">
+            <div>
+                <h1>Iron Post Continuity</h1>
+                <p>Plan. Prepare. Protect.</p>
+            </div>
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li>pricing.html</li>
+                <li>.html">FAQ</a></li>
+                <li>about.htmlAbout</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="portal.html">Portal</a></li>
+				<li>
+                <label class="theme-switch">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider"></span>
+                </label>
+				</li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="page-hero portal-hero">
+    <div class="container">
+        <h2>Your Continuity Resources, All in One Place</h2>
+        <p>
+            The Iron Post Continuity Client Portal is currently under
+            development and will provide clients with secure access to
+            project deliverables, continuity documentation, engagement
+            updates, and preparedness resources.
+        </p>
+    </div>
+</section>
+
+<section class="section-light">
+    <div class="container">
+        <div class="section-heading">
+            <h2>What You'll Be Able to Access</h2>
+            <p>
+                Designed exclusively for Iron Post Continuity clients,
+                the portal will provide a centralized location for
+                continuity planning resources and project information.
+            </p>
+        </div>
+
+        <div class="cards-grid">
+            <div class="card">
+                <h3>Continuity Documentation</h3>
+                <p>
+                    Access Business Continuity Plans, Disaster Recovery
+                    Plans, Business Impact Analyses, Incident Response Plans,
+                    and supporting documentation whenever you need it.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Project Deliverables</h3>
+                <p>
+                    Review assessments, recommendations, reports,
+                    and engagement deliverables in a secure location.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Secure File Exchange</h3>
+                <p>
+                    Upload and download project files through a protected
+                    client environment designed for collaboration.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Preparedness Resources</h3>
+                <p>
+                    Access planning guides, templates, checklists,
+                    and reference materials that support ongoing resilience.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-dark">
+    <div class="container">
+        <div class="section-heading">
+            <h2>Built for Long-Term Preparedness</h2>
+            <p>
+                Continuity planning is not a one-time activity. The portal
+                is being designed to help organizations maintain visibility
+                into preparedness efforts long after initial project delivery.
+            </p>
+        </div>
+
+        <div class="cards-grid">
+            <div class="card">
+                <h3>Document History</h3>
+                <p>
+                    Maintain access to current continuity plans and historical
+                    revisions as your organization evolves and matures.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Engagement Tracking</h3>
+                <p>
+                    Monitor project milestones, deliverables, reviews,
+                    and planning activities during active engagements.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Future Enhancements</h3>
+                <p>
+                    Planned features may include dashboards, exercise
+                    records, review reminders, support resources,
+                    and additional client-focused tools.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-light">
+    <div class="container">
+        <div class="section-heading">
+            <h2>Coming Soon</h2>
+        </div>
+
+        <div class="card">
+            <h3>Currently Under Development</h3>
+
+            <p>
+                We are actively developing the Iron Post Continuity
+                Client Portal to provide a secure, reliable, and
+                streamlined experience for our clients.
+            </p>
+
+            <p>
+                The portal is intended to serve as a central hub for
+                continuity planning documentation, collaboration,
+                project management, and ongoing preparedness activities.
+            </p>
+
+            <p>
+                Additional functionality and portal availability
+                information will be announced as development progresses.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section">
+    <div class="container">
+        <h2>Ready to Strengthen Your Preparedness?</h2>
+        <p>
+            Every engagement begins with a conversation. Contact Iron Post
+            Continuity to discuss your continuity planning, disaster recovery,
+            and organizational resilience objectives.
+        </p>
+
+        <a href="contact.html" class="btn">
+            Schedule a Consultation
+        </a>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>
+            © 2026 Iron Post Continuity. All Rights Reserved.
+        </p>
+    </div>
+</footer>
+
+<!-- Use the same dark mode JavaScript already implemented on your other pages -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+
+    const toggle = document.getElementById('theme-toggle');
+
+    if (localStorage.getItem('theme') === 'dark') {
+        document.body.classList.add('dark-mode');
+        toggle.checked = true;
+    }
+
+    toggle.addEventListener('change', () => {
+
+        if (toggle.checked) {
+            document.body.classList.add('dark-mode');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            document.body.classList.remove('dark-mode');
+            localStorage.setItem('theme', 'light');
+        }
+
+    });
+
+});
+</script>
+
+</body>
+</html>
